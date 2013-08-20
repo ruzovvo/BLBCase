@@ -13,17 +13,16 @@
       <h1>Buy Local Bonds</h1>
       <h4 class="text-center">Login</h4>
       <form class="form-horizontal">
-        <form class="form-horizontal">
           <div class="control-group">
             <label class="control-label" for="inputEmail">Login:</label>
             <div class="controls">
-              <input type="text" id="inputEmail" placeholder="user name">
+              <input type="text" id="inputEmail">
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="inputPassword">Password:</label>
             <div class="controls">
-              <input type="password" id="inputPassword" placeholder="password">
+              <input type="password" id="inputPassword">
             </div>
           </div>
           <div class="control-group">

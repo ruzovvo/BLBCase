@@ -17,7 +17,7 @@ public class LoginServlet extends HttpServlet {
      */
     public LoginServlet() {
         super();
-        // TODO Auto-generated constructor stub
+        
     }
 
 	/**
@@ -34,5 +34,4 @@ public class LoginServlet extends HttpServlet {
 		//String userName = request.getParameter("username");
 	    //String password = request.getParameter("password");
 	}
-
 }
