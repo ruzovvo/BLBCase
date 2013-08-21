@@ -11,10 +11,18 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>com.db.web.LoginServlet</servlet-class>
+    <servlet-class>com.db.blb.servlet.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
+  <security-constraint>
+    <display-name>Restrict Access</display-name>
+    <web-resource-collection>
+        <web-resource-name>LoginServlet</web-resource-name>
+        <url-pattern>/BLBCase/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint/>
+  </security-constraint>
 </web-app>

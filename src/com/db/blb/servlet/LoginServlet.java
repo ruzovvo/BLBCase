@@ -1,6 +1,7 @@
-package com.db.web;
+package com.db.blb.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +18,6 @@ public class LoginServlet extends HttpServlet {
      */
     public LoginServlet() {
         super();
-        
     }
 
 	/**
@@ -30,8 +30,10 @@ public class LoginServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//String userName = request.getParameter("username");
-	    //String password = request.getParameter("password");
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		String username = request.getParameter("username");
+	    String password = request.getParameter("pwd");
+	    System.out.println(username + " " + password);
 	}
 }
